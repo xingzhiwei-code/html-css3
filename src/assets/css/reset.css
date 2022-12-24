@@ -2,7 +2,8 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 62.5% !important;
     font: inherit;
     font-weight: normal;
     vertical-align: baseline;

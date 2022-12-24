@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/login",
     name: "login",
-    component: () => import("@/pages/Login.vue"),
+    component: () => import("@/pages/Login/index.vue"),
     meta: {
       title: "开启一天好心情！",
     },
