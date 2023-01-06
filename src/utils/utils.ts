@@ -1,4 +1,4 @@
 /**
  * 路由跳转
  */
-export default {};
+export const routerJump = (path: string) => {};
