@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "welcome",
@@ -16,6 +16,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/pages/Login/index.vue"),
     meta: {
       title: "开启一天好心情！",
+    },
+  },
+  {
+    path: "/show",
+    name: "show",
+    component: () => import("@/pages/MultipleShow/index.vue"),
+    meta: {
+      title: "展示不一样的美好！",
     },
   },
 ];

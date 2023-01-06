@@ -1,7 +1,7 @@
-type LoginForm = {
+export type LoginForm = {
   userName: string;
   passWord: string;
-  verification: string;
+  verification?: string;
   [key: string]: any;
 };
 
@@ -31,8 +31,6 @@ export const useVerification = () => {
 
   // 开始倒计时
   const runTime = () => {
-    console.log("fs");
-
     const timer = setInterval(() => {
       if (currentTime.value === 0) {
         clearInterval(timer);
