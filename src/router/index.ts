@@ -3,27 +3,18 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    name: "welcome",
-    component: () => import("@/pages/HelloEveryOne.vue"),
-    alias: "/welcome",
+    alias: "/home",
+    redirect: "/home",
     meta: {
       title: "愿世界和平！",
     },
   },
   {
-    path: "/login",
-    name: "login",
-    component: () => import("@/pages/Login/index.vue"),
+    path: "/home",
+    name: "home",
+    component: () => import("@/pages/Home/index.vue"),
     meta: {
       title: "开启一天好心情！",
-    },
-  },
-  {
-    path: "/show",
-    name: "show",
-    component: () => import("@/pages/MultipleShow/index.vue"),
-    meta: {
-      title: "展示不一样的美好！",
     },
   },
 ];
