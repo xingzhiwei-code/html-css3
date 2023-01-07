@@ -3,7 +3,6 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    alias: "/home",
     redirect: "/home",
     meta: {
       title: "愿世界和平！",
