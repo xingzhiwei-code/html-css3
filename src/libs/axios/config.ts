@@ -29,3 +29,5 @@ const config: AxiosRequestConfig = {
     return status >= 200 && status < 500;
   },
 };
+
+export default config;

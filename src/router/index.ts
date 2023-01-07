@@ -9,6 +9,14 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
+    path: "/login",
+    name: "login",
+    component: () => import("@/pages/Login/index.vue"),
+    meta: {
+      title: "让我们的相识从登录开始！",
+    },
+  },
+  {
     path: "/home",
     name: "home",
     component: () => import("@/pages/Home/index.vue"),
