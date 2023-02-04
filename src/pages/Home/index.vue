@@ -1,11 +1,9 @@
 <template>
-  <div class="login-index">
-    <RefHistory />
-  </div>
+  <Text />
 </template>
 
 <script setup lang="ts">
-import RefHistory from "@/test/useRefHistory/index.vue";
+import Text from "@/utils/debounceRef/test.vue";
 </script>
 
 <style lang="less"></style>
