@@ -4,6 +4,7 @@ import AutoImport from "unplugin-auto-import/vite";
 
 // const path = require("path");
 import path from "path";
+const resolve = (dir: string) => path.join(__dirname, dir);
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,7 +17,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": resolve("src"),
+      '@libs': resolve("src/libs"),
     },
   },
 });

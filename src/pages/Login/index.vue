@@ -1,25 +1,7 @@
 <template>
-  <div class="login-index">
-    <div class="buble"></div>
-    <!-- 登录页 -->
-    <!-- <Login /> -->
-    <!-- 注册页 -->
-    <Signup />
-  </div>
+  <div class="login-index">登录</div>
 </template>
 
-<script setup lang="ts">
-import Login from "./Login.vue";
-import Signup from "./Signup.vue";
-import { bubleCreate } from "@/utils/buble";
+<script setup lang="ts"></script>
 
-onMounted(() => {
-  setInterval(() => {
-    bubleCreate();
-  }, 1000);
-});
-</script>
-
-<style lang="less">
-@import "@/assets/css/login.less";
-</style>
+<style lang="less"></style>
