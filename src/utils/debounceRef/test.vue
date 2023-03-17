@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { debounceRef } from './debounceRef';
-const text = debounceRef("", 500);
+const text = regf("", 500);
 </script>
 
 <style lang="less"></style>
