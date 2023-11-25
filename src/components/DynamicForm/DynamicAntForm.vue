@@ -1,7 +1,7 @@
 <template>
   <a-form :label-col="labelCol" :wrapper-col="wrapperCol" :model="formModel" :validate-trigger="validateTrigger" @finish="onFinish">
     <a-form-item v-for="(item, index) in formItems" :key="index" :label="item.label" :name="item.name" :rules="item.rules">
-      <component :is="item.component" v-bind="item.props" v-model="formModel[item.name]"></component>
+      <component :is="item.component" v-bind="item.props" v-model:value="formModel[item.name]"></component>
     </a-form-item>
     <a-form-item>
       <a-button type="primary" html-type="submit">提交</a-button>
@@ -51,7 +51,13 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const formModel = ref<Record<string, any>>({});
+    const formModel = ref<Record<string, any>>({
+      // username: null,
+      // password: null,
+      // gender: null,
+      // hobby: null,
+    });
+    console.log(formModel.value);
     const { formItems } = props;
 
     const onFinish = (values: Record<string, any>) => {

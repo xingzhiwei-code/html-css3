@@ -18,7 +18,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve("src"),
-      '@libs': resolve("src/libs"),
+      "@libs": resolve("src/libs"),
     },
   },
 });
