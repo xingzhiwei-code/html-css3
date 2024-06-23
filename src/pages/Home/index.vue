@@ -1,12 +1,11 @@
 <template>
-  <div><DynamicAntForm :on-finish="handleFinish" :form-items="formItems" /></div>
+  <div>
+    <SlideinText />
+  </div>
 </template>
 
 <script setup lang="ts">
-import DynamicAntForm from "@/components/DynamicForm/DynamicAntForm.vue";
-import formItems from "@/components/DynamicForm/FormItems";
-
-const handleFinish = () => {};
+import SlideinText from "@/directive/VSlidein/SlideinText.vue";
 </script>
 
 <style lang="less" scoped></style>
